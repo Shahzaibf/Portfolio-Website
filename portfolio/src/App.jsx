@@ -1,13 +1,20 @@
 import { useState } from 'react'
-import './App.css'
 import Navbar from './components/Navbar'
+import { Routes, Route } from "react-router";
 import ProfileCard from './components/ProfileCard'
+import AboutPage from './pages/AboutPage';
+import ProjectsPage from './pages/ProjectsPage';
+import ContactsPage from './pages/ContactsPage';
 
 function App() {
   return (
     <>
       <Navbar/>
-      <ProfileCard/>
+      <Routes>
+        <Route path="/about" element={<AboutPage />}  />
+        <Route path="/projects" element={<ProjectsPage />}  />
+        <Route path="/contacts" element={<ContactsPage />}  />
+      </Routes>
     </>
   )
 }
