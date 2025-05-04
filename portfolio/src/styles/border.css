@@ -1,0 +1,27 @@
+.animated-border {
+    position: relative;
+    z-index: 0;
+}
+
+.animated-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: 0.5rem;
+    padding: 3px;
+    background: linear-gradient(270deg, #00f, #0ff, #0f0, #ff0, #f00, #f0f, #00f);
+    background-size: 600% 600%;
+    animation: animatedBorder 5s ease infinite;
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+@keyframes animatedBorder {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
