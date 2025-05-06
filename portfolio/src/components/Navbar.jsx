@@ -90,7 +90,7 @@ const Navbar = () => {
             <NavLinks isMobile={true} />
           </div>
         </div>
-      </nav>
+      </nav> 
     </>
   );
 };

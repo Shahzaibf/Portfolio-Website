@@ -4,6 +4,7 @@ import { FaPhoneAlt, FaLinkedin } from "react-icons/fa"
 
 const ContactsPage = () => {
   //<div className="min-h-screen bg-blue-950 text-white flex flex-col items-center justify-center p-6">
+  document.body.style.overflow = 'hidden';
   return (
     <>
       <div className="h-screen bg-blue-950 text-white flex flex-col items-center justify-center p-6 ">
