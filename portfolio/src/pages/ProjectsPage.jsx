@@ -4,10 +4,13 @@ import { IoIosCloseCircle } from "react-icons/io";
 import { FaGithub } from "react-icons/fa"; //<FaGithub />
 import ProjectCard from '../components/ProjectCard'
 import '../styles/border.css'
+import { createSwapy, utils } from 'swapy';
 import { useEffect } from 'react';
+import { useRef } from 'react';
 
-const projects = [
+const initialProjects = [
   {
+    id: "1",
     title: "MERN Product Page Application",
     description: "A full-stack web application that lets users create, view, update, and delete products. Built with the MERN stack, it features a responsive UI with Chakra UI, modal-based editing, and dynamic routing. Ideal for managing a simple product catalog.",
     techstack: ["MongoDB", "Express.js", "React.js", "Node.js"],
@@ -15,6 +18,7 @@ const projects = [
     gitLink: true
   },
   {
+    id: "2",
     title: "Nexus",
     description: "App for helping gamers find teams by matching them based on game preferences, playstyle, playtime, and region. It features chat for coordination and a reputation system to reward positive interactions and report issues. Mainly handled cloud computing, architecture, cloud functions, and database management.",
     techstack: ["AWS", "Lambda", "EC2", "PostgreSQL", "Go"],
@@ -22,7 +26,16 @@ const projects = [
     gitLink: false
   },
   {
+    id: "3",
     title: "Project 3",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec nisl vitae nunc pellentesque ornare vitae eget urna. Maecenas iaculis in est in rutrum. Nulla eros lorem, LIMIT HERE imperdiet non augue ut, mattis varius erat.",
+    techstack: ["React", "Tailwind", "Python"],
+    githublink: null,
+    gitLink: false,
+  },
+  {
+    id: "4",
+    title: "Project 4",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec nisl vitae nunc pellentesque ornare vitae eget urna. Maecenas iaculis in est in rutrum. Nulla eros lorem, LIMIT HERE imperdiet non augue ut, mattis varius erat.",
     techstack: ["React", "Tailwind", "Python"],
     githublink: null,
@@ -30,8 +43,12 @@ const projects = [
   },
 ] 
 const ProjectsPage = () => {
+  const [projects, setProjects] = useState(initialProjects)
   const [selectedCard, setSelectedCard] = useState(null);
   const [isClosing, setIsClosing] = useState(false);
+  const container = useRef(null);
+  const swapy = useRef(null);
+  
 
   const handleClose = () => {
     setIsClosing(true);
@@ -49,6 +66,19 @@ const ProjectsPage = () => {
     }
   }, [selectedCard]);
 
+  useEffect(() => {
+    if (container.current) {
+      swapy.current = createSwapy(container.current, {
+        animation: 'none',
+        swapMode: 'drop',
+        autoScrollOnDrag: true,
+      });
+
+      swapy.current.onSwap((event) => {
+        console.log('swap', event);
+      })
+    }
+  }, []);
 
   return (
     <>
@@ -57,10 +87,12 @@ const ProjectsPage = () => {
           <span className="p-3 rounded animated-border">My Projects</span>
         </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto" ref={container}>
           {projects.map((proj, index) => (
-            <div key={index} className=" hover:cursor-pointer" onClick={() => setSelectedCard(proj)}>
-              <ProjectCard {...proj}/>
+            <div key={index} className=" hover:cursor-pointer" data-swapy-slot={index}>
+              <div onClick={() => setSelectedCard(proj)} data-swapy-item = {index} >
+                <ProjectCard {...proj}/>
+              </div>
             </div>
           ))}
         </div>

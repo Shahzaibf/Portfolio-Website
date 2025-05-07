@@ -46,3 +46,21 @@
 .animate-fadeOut {
   animation: fadeOut 0.3s ease-in forwards;
 }
+
+/* Swappy */
+
+[data-swapy-ghost] {
+  display: none !important;
+}
+
+[data-swapy-item] {
+  transition: none;
+  will-change: none;
+}
+
+[data-swapy-item].swapy-dragging {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+  z-index: auto !important;
+}
