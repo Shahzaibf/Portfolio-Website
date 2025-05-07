@@ -23,7 +23,7 @@ const ContactsPage = () => {
               href="mailto:shahzaibfareed1118@gmail.com"
               className="bg-white text-blue-900 p-3 rounded-full hover:bg-blue-100 transition"
             >
-              <IoMdMail className="w-6 h-6" />
+              <IoMdMail className="w-6 h-6 hover:text-blue-500 transition-colors duration-300" />
             </a>
             <p className="text-sm font-semibold">shahzaibfareed1118@gmail.com</p>
           </div>
@@ -34,7 +34,7 @@ const ContactsPage = () => {
               target="_blank"
               className="bg-white text-blue-900 p-3 rounded-full hover:bg-blue-100 transition"
             >
-              <FaLinkedin className="w-6 h-6" />
+              <FaLinkedin className="w-6 h-6 hover:text-blue-500 transition-colors duration-300" />
             </a>
             <p className="text-sm font-semibold">LinkedIn Profile</p>
           </div>

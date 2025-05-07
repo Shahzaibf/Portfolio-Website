@@ -8,22 +8,25 @@ import { useEffect } from 'react';
 
 const projects = [
   {
-    title: "Project 1",
-    description: "Long description here...",
-    techstack: ["React", "Tailwind", "Python", "AWS"],
-    githublink: "https://github.com/example/project1",
+    title: "MERN Product Page Application",
+    description: "A full-stack web application that lets users create, view, update, and delete products. Built with the MERN stack, it features a responsive UI with Chakra UI, modal-based editing, and dynamic routing. Ideal for managing a simple product catalog.",
+    techstack: ["MongoDB", "Express.js", "React.js", "Node.js"],
+    githublink: "https://github.com/Shahzaibf/Product-Page",
+    gitLink: true
   },
   {
-    title: "Project 2",
-    description: "Long description here...",
-    techstack: ["React", "Tailwind"],
-    githublink: "https://github.com/example/project2",
+    title: "Nexus",
+    description: "App for helping gamers find teams by matching them based on game preferences, playstyle, playtime, and region. It features chat for coordination and a reputation system to reward positive interactions and report issues. Mainly handled cloud computing, architecture, cloud functions, and database management.",
+    techstack: ["AWS", "Lambda", "EC2", "PostgreSQL", "Go"],
+    githublink: null,
+    gitLink: false
   },
   {
     title: "Project 3",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec nisl vitae nunc pellentesque ornare vitae eget urna. Maecenas iaculis in est in rutrum. Nulla eros lorem, LIMIT HERE imperdiet non augue ut, mattis varius erat.",
     techstack: ["React", "Tailwind", "Python"],
-    githublink: "https://github.com/example/project3",
+    githublink: null,
+    gitLink: false,
   },
 ] 
 const ProjectsPage = () => {
@@ -46,6 +49,7 @@ const ProjectsPage = () => {
     }
   }, [selectedCard]);
 
+
   return (
     <>
       <div className={`min-h-screen bg-blue-950 text-white px-6 py-12 ${selectedCard ? 'opacity-50 pointer-events-none' : ''}`}>
@@ -63,7 +67,7 @@ const ProjectsPage = () => {
       </div>
       
       {selectedCard && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center text-center animate-fadeIn" >
+        <div className="fixed inset-0 z-50 flex items-center justify-center text-center" >
           <div className={`bg-blue-800 p-6 rounded-xl shadow-2xl max-w-2xl w-full overflow-y-auto max-h-[90vh] relative ${isClosing ? 'animate-fadeOut' : 'animate-fadeIn'}`}>
             <button
               onClick={handleClose}
@@ -85,7 +89,8 @@ const ProjectsPage = () => {
                 </span>
               ))}
             </div>
-            <div className=' mt-auto text-center'>
+            {selectedCard.gitLink && (
+              <div className=' mt-auto text-center'>
               <a
                 href={selectedCard.githublink}
                 target="_blank"
@@ -95,6 +100,7 @@ const ProjectsPage = () => {
                 <span className="text-sm font-medium">View on GitHub</span>
               </a>
             </div>
+            )}
           </div>
         </div>
       )}

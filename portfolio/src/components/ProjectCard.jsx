@@ -2,7 +2,7 @@ import React from 'react'
 import { FaGithub } from "react-icons/fa"; //<FaGithub />
 import '../styles/animate.css'
 
-const ProjectCard = ({title, description, techstack, githublink}) => {
+const ProjectCard = ({title, description, techstack, githublink, gitLink}) => {
   return (
     <>
       <div className="bg-blue-900 rounded-2xl shadow-lg p-6 transition-transform transform hover:-translate-y-1 hover:shadow-xl text-white flex flex-col justify-between h-full animated-open">
@@ -18,16 +18,19 @@ const ProjectCard = ({title, description, techstack, githublink}) => {
           </span>
         ))}
       </div>
+      
       <div className="mt-auto text-center">
+      {gitLink && (
         <a
-          href={githublink}
-          target="_blank"
-          className="inline-flex items-center gap-2 text-blue-300 hover:text-blue-400 transition"
-          onClick={(e) => e.stopPropagation()}
-        >
-          <FaGithub className="text-2xl" />
-          <span className="text-sm font-medium">View on GitHub</span>
-        </a>
+        href={githublink}
+        target="_blank"
+        className="inline-flex items-center gap-2 text-blue-300 hover:text-blue-400 transition"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <FaGithub className="text-2xl" />
+        <span className="text-sm font-medium">View on GitHub</span>
+      </a>
+      )}
       </div>
     </div>
     </>
