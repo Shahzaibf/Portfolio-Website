@@ -4,13 +4,15 @@ import { Routes, Route } from "react-router";
 import AboutPage from './pages/AboutPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ContactsPage from './pages/ContactsPage';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
     <>
       <Navbar/>
       <Routes>
-        <Route path="/" element={<AboutPage />}  />
+        <Route path="/" element={<HomePage />}  />
+        <Route path="/about" element={<AboutPage />}  />
         <Route path="/projects" element={<ProjectsPage />}  />
         <Route path="/contacts" element={<ContactsPage />}  />
       </Routes>

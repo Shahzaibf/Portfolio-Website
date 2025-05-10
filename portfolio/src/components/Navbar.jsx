@@ -5,7 +5,8 @@ import { IoMdClose } from "react-icons/io"; // <IoMdClose />
 import { useState, useEffect } from "react";
 
 const links = [
-  { to: "/", label: "About" },
+  { to: "/", label: "Home"},
+  { to: "/about", label: "About" },
   { to: "/projects", label: "Projects" },
   { to: "/contacts", label: "Contacts" },
 ];
