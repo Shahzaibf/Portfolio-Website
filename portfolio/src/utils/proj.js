@@ -3,7 +3,7 @@ export const initialProjects = [
     title: "Portfolio",
     description:
       "This portfolio site! Created to have others see it and get in touch! Hoping for you to understand my skillset, personality, and goals!",
-    techstack: ["React", "Tailwind"],
+    techstack: ["React.js", "Tailwind"],
     githublink: null,
     gitLink: false,
   },
@@ -19,7 +19,7 @@ export const initialProjects = [
     title: "Nexus",
     description:
       "App for helping gamers find teams by matching them based on game preferences, playstyle, playtime, and region. It features chat for coordination and a reputation system to reward positive interactions and report issues. Mainly handled cloud computing, architecture, cloud functions, and database management.",
-    techstack: ["AWS", "Lambda", "EC2", "PostgreSQL", "Go"],
+    techstack: ["Lambda", "EC2", "PostgreSQL", "Docker", "Go"],
     githublink: null,
     gitLink: false,
   },
@@ -27,7 +27,7 @@ export const initialProjects = [
     title: "Project 4",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec nisl vitae nunc pellentesque ornare vitae eget urna. Maecenas iaculis in est in rutrum. Nulla eros lorem, LIMIT HERE imperdiet non augue ut, mattis varius erat.",
-    techstack: ["React", "Tailwind", "Python"],
+    techstack: ["Swift", "SwiftUI"],
     githublink: null,
     gitLink: false,
   },
