@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { IoIosCloseCircle } from "react-icons/io";
-import { FaGithub } from "react-icons/fa"; //<FaGithub />
+import { FaGithub, FaLock, FaLockOpen } from "react-icons/fa"; //<FaGithub />
 import ProjectCard from '../components/ProjectCard'
 import '../styles/border.css'
 import { createSwapy } from 'swapy';
@@ -11,7 +11,8 @@ import { initialProjects } from '../utils/proj';
 
 
 const ProjectsPage = () => {
-  const [projects] = useState(initialProjects)
+  const [isLocked, setIsLocked] = useState(false);
+  const [projects] = useState(initialProjects);
   const [selectedCard, setSelectedCard] = useState(null);
   const [isClosing, setIsClosing] = useState(false);
   const container = useRef(null);
@@ -48,12 +49,31 @@ const ProjectsPage = () => {
     }
   }, []);
 
+  const handleLock = () => {
+    setIsLocked(!isLocked);
+    if (!isLocked) {
+      console.log('locked');
+      swapy.current.enable(false);
+    } else {
+      console.log('unlocked');
+      swapy.current.enable(true);
+    }
+  };
+
   return (
     <>
       <div className={`min-h-screen bg-blue-950 text-white px-6 py-12 ${selectedCard ? 'opacity-50 pointer-events-none' : ''}`}>
-        <h1 className="text-center text-4xl font-bold font-serif mb-10">
+      <div className="relative mb-10 max-w-6xl mx-auto">
+        <h1 className="text-center text-4xl font-bold font-serif">
           <span className="p-3 rounded animated-border">My Projects</span>
         </h1>
+        <button
+          onClick={handleLock}
+          className="absolute top-1/2 right-0 transform -translate-y-1/2 text-xl p-2 bg-blue-700 rounded-full hover:bg-blue-800 hover:cursor-pointer   transition"
+        >
+          {isLocked ? <FaLock /> : <FaLockOpen />}
+        </button>
+      </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto" ref={container}>
           {projects.map((proj, index) => (
@@ -65,7 +85,8 @@ const ProjectsPage = () => {
           ))}
         </div>
       </div>
-      
+
+
       {selectedCard && (
         <div className="fixed inset-0 z-50 flex items-center justify-center text-center" >
           <div className={`bg-blue-800 p-6 rounded-xl shadow-2xl max-w-2xl w-full overflow-y-auto max-h-[90vh] relative ${isClosing ? 'animate-fadeOut' : 'animate-fadeIn'}`}>
