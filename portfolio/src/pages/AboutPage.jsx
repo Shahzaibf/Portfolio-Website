@@ -18,6 +18,9 @@ const AboutPage = () => {
                 Hey, I'm Shahzaib! I'm currently pursuing a Bachelor's degree in Computer Science at Hunter College. Through my projects, I've gained hands-on experience with a range of technologies and I'm excited to bring these skills to life in my work. I have experience in front-end and back-end development, as well as in database management and cloud infrastructure.
               </p>
               <p className='text-xl font-bold'>My techstack:</p>
+              <p>
+                
+              </p>
               <div className='flex text-4xl space-x-3 '>
                 {/* Techstack, icons: */}
                 <FaPython className='hover:text-blue-500 transition-colors duration-300' />

@@ -24,11 +24,11 @@ export const initialProjects = [
     gitLink: false,
   },
   {
-    title: "Project 4",
+    title: "Air Quality Control",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec nisl vitae nunc pellentesque ornare vitae eget urna. Maecenas iaculis in est in rutrum. Nulla eros lorem, LIMIT HERE imperdiet non augue ut, mattis varius erat.",
+      "Mobile IOS app project designed to help users monitor nearby air quality and city air quality using search. Pulls AQI data and pollutant levels from OpenWeatherMap API.",
     techstack: ["Swift", "SwiftUI"],
-    githublink: null,
-    gitLink: false,
+    githublink: "https://github.com/Shahzaibf/Air-Quality-Control",
+    gitLink: true,
   },
 ];
