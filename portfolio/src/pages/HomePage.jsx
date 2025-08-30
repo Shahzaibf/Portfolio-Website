@@ -27,7 +27,7 @@ const HomePage = () => {
           <p className='text-base text-white font-medium tracking-wide'>New York City, NY</p>
         </div>
         <p className="text-lg text-gray-300 max-w-xl mb-6">
-          I design and build backend systems, APIs, and cloud infrastructure for scalable applications.
+        Current Computer Science student at Hunter College and full-stack developer focused on building clean, efficient, and reliable applications.
         </p>
         <div className="flex gap-4">
           <Link to="/projects" className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition-colors duration-300">
