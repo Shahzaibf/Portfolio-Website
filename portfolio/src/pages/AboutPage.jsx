@@ -5,6 +5,7 @@ import { SiCplusplus } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 
 const AboutPage = () => {
+  document.body.style.overflow = 'auto';
   return (
     <div className="bg-gradient-to-b from-blue-950 to-blue-900 min-h-screen text-white">
       <div className="max-w-4xl mx-auto py-12 px-6">
