@@ -9,8 +9,8 @@ const HomePage = () => {
   document.body.style.overflow = 'hidden';
   return (
     <>
-    <div className='flex h-screen items-center justify-between bg-blue-950 px-10 text-white'>
-      <div className="flex flex-col items-start justify-center w-1/2">
+    <div className='flex h-screen items-center justify-between bg-blue-950 px-10 text-white md:flex-row flex-col md:justify-between justify-center text-center md:text-left'>
+      <div className="flex flex-col items-center justify-center md:items-start justify-center w-full md:w-1/2">
         <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent leading-tight fade-in-title">
           Software Engineer
         </h1>
@@ -38,8 +38,8 @@ const HomePage = () => {
           </Link>
         </div>
       </div>
-        <div className='w-1/2 flex justify-center'>
-          <img src={avatar} alt="Image of Shahzaib Fareed" className=' w-64 h-64 rounded-full border-4 border-blue-300 object-cover'/>
+        <div className='w-1/2 flex justify-center hidden md:flex'>
+          <img src={avatar} alt="Image of Shahzaib Fareed" className=' w-80 h-80 rounded-2xl border-4 border-blue-300 object-cover'/>
         </div>
       </div>
     </>

@@ -10,7 +10,7 @@ const AboutPage = () => {
     <div className="bg-gradient-to-b from-blue-950 to-blue-900 min-h-screen text-white">
       <div className="max-w-4xl mx-auto py-12 px-6">
         
-        <h1 className="text-center text-5xl font-bold font-serif mb-10">
+        <h1 className="text-center text-4xl font-bold font-serif mb-10">
           About Me
         </h1>
 
@@ -43,11 +43,11 @@ const AboutPage = () => {
           <div>
             <h2 className="text-2xl font-bold mb-4 border-b border-blue-700 pb-2">Key Highlights</h2>
             <ul className="list-disc pl-5 space-y-2 text-base leading-relaxed">
-              <li>Collaborated with a Google mentor in a team of 4 to build a tourist chatbot using Dialogflow, JavaScript, and Google APIs during Codefest</li>
-              <li>Assistant Instructor @ Beam Center (CUNY Career Launch - Top 10% selected)</li>
-              <li>Developed a MERN stack product tracker with full CRUD operations and API integration</li>
-              <li>Built an air quality app using SwiftUI and OpenWeatherMap API</li>
-              <li>Deploying a GraphQL API with Go using AWS Lambda, and leveraging AWS CDK, EC2, Heroku, and Docker for infrastructure management in a cross-platform capstone project</li>
+              <li>Collaborated with a Google mentor in a team of 4 to build a tourist chatbot using Dialogflow, JavaScript, and Google APIs during Google Codefest.</li>
+              <li>Assistant Instructor @ Beam Center (CUNY Career Launch - Top 10% selected).</li>
+              <li>Developed a MERN stack product tracker with full CRUD operations and API integration.</li>
+              <li>Built an air quality app using SwiftUI and OpenWeatherMap API.</li>
+              <li>Deploying a GraphQL API with Go using AWS Lambda, and leveraging AWS CDK, EC2, Heroku, and Docker for infrastructure management in a cross-platform capstone project.</li>
             </ul>
           </div>
 

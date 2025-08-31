@@ -20,8 +20,8 @@ export const initialProjects = [
     description:
       "App for helping gamers find teams by matching them based on game preferences, playstyle, playtime, and region. It features chat for coordination and a reputation system to reward positive interactions and report issues. Mainly handled cloud computing, architecture, cloud functions, and database management.",
     techstack: ["Lambda", "EC2", "PostgreSQL", "Docker", "Go"],
-    githublink: null,
-    gitLink: false,
+    githublink: "https://github.com/Evantopian/Nexus/tree/cloud",
+    gitLink: true,
   },
   {
     title: "Air Quality Control",
@@ -29,6 +29,14 @@ export const initialProjects = [
       "Mobile IOS app project designed to help users monitor nearby air quality and city air quality using search. Pulls AQI data and pollutant levels from OpenWeatherMap API.",
     techstack: ["Swift", "SwiftUI"],
     githublink: "https://github.com/Shahzaibf/Air-Quality-Control",
+    gitLink: true,
+  },
+  {
+    title: "Product landing page",
+    description:
+      "Created a mock product landing page to practice HTML, CSS, and media queries.",
+    techstack: ["HTML", "CSS"],
+    githublink: "https://github.com/Shahzaibf/Product-landing-page",
     gitLink: true,
   },
 ];
