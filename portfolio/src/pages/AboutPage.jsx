@@ -3,6 +3,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 import { FaReact, FaJs, FaPython, FaAws, FaDocker, FaGithub } from "react-icons/fa";
 import { SiCplusplus } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
+import '../styles/animate.css'
 
 const AboutPage = () => {
   document.body.style.overflow = 'auto';
@@ -14,14 +15,15 @@ const AboutPage = () => {
           About Me
         </h1>
 
-        <div className="bg-blue-900 rounded-2xl shadow-lg p-8 space-y-10 hover:shadow-2xl transition">
+        <div className="bg-blue-900 rounded-2xl shadow-lg p-8 space-y-10 hover:shadow-2xl transition animated-open">
 
           <p className="text-lg leading-relaxed">
             Hey! 
             I'm currently pursuing a Bachelor's degree in Computer Science at Hunter College. 
             Through my projects, I've gained hands-on experience with a range of technologies 
             and I'm excited to bring these skills to life in my work. I have experience in 
-            front-end and back-end development, as well as in database management and cloud infrastructure.
+            front-end and back-end development, as well as in database management and cloud infrastructure. 
+            I love experimenting with AI and try to integrate it into my projects.
           </p>
 
           {/* Tech Stack */}
@@ -44,9 +46,8 @@ const AboutPage = () => {
             <h2 className="text-2xl font-bold mb-4 border-b border-blue-700 pb-2">Key Highlights</h2>
             <ul className="list-disc pl-5 space-y-2 text-base leading-relaxed">
               <li>Collaborated with a Google mentor in a team of 4 to build a tourist chatbot using Dialogflow, JavaScript, and Google APIs during Google Codefest.</li>
-              <li>Assistant Instructor @ Beam Center (CUNY Career Launch - Top 10% selected).</li>
               <li>Developed a MERN stack product tracker with full CRUD operations and API integration.</li>
-              <li>Built an air quality app using SwiftUI and OpenWeatherMap API.</li>
+              <li>Developed a SwiftUI-based air quality app leveraging the OpenWeatherMap API, providing real-time AQI insights."</li>
               <li>Deploying a GraphQL API with Go using AWS Lambda, and leveraging AWS CDK, EC2, Heroku, and Docker for infrastructure management in a cross-platform capstone project.</li>
             </ul>
           </div>
@@ -70,7 +71,7 @@ const AboutPage = () => {
           {/* Outside of Tech */}
           <div>
             <h2 className="text-2xl font-bold mb-4 border-b border-blue-700 pb-2">Outside of Tech</h2>
-            <p>I enjoy 3D printing, bowling, and hiking.</p>
+            <p>When I’m not coding, you’ll probably find me experimenting with 3D printing designs, bowling with friends, or exploring hiking trails.</p>
           </div>
 
           {/* Resume Button */}

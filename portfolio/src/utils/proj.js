@@ -32,6 +32,14 @@ export const initialProjects = [
     gitLink: true,
   },
   {
+    title: "OpenGL practice",
+    description:
+      "Experimenting use of OpenGL and complexities involving it. Created a circle using mathematics. ",
+    techstack: ["C++", "OpenGL"],
+    githublink: "https://github.com/Shahzaibf/open_gl_demo",
+    gitLink: true,
+  },
+  {
     title: "Product landing page",
     description:
       "Created a mock product landing page to practice HTML, CSS, and media queries.",
