@@ -4,8 +4,8 @@ export const initialProjects = [
     description:
       "This portfolio site! Created to have others see it and get in touch! Hoping for you to understand my skillset, personality, and goals!",
     techstack: ["React.js", "Tailwind"],
-    githublink: null,
-    gitLink: false,
+    githublink: "https://github.com/Shahzaibf/Portfolio-Website",
+    gitLink: true,
   },
   {
     title: "MERN Product Page Application",
