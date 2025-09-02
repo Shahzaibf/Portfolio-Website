@@ -2,10 +2,28 @@ import React from 'react'
 import { Link } from "react-router";
 import '../styles/animate.css';
 import { IoLocation } from "react-icons/io5"; //<IoLocation />
-import avatar from '../images/avatar.jpg';
+import avatar from '/images/avatar.jpg';
+import { useEffect } from 'react';
 
 const HomePage = () => {
   const lookingForWork = true;
+  // Add scrolling only for mobile because UI gets stuck on screen
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        document.body.style.overflow = 'auto';
+      } else {
+        document.body.style.overflow = 'hidden';
+      }
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      document.body.style.overflow = 'auto'; // reset
+    };
+  }, [])
+  
   document.body.style.overflow = 'hidden';
   return (
     <>

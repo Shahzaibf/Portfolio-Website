@@ -86,9 +86,9 @@ const Navbar = () => {
         </div>
 
         {/* Mobile nav */}
-        <div className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-          }`}>
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-blue-900/50 backdrop-blur-sm flex flex-row">
+        <div className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+          } overflow-x-auto`}>
+          <div className="px-2 pt-2 pb-3 space-y-1 space-x-1 sm:px-3 bg-blue-900/50 backdrop-blur-sm flex flex-row">
             <NavLinks isMobile={true} />
           </div>
         </div>

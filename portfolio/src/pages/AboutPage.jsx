@@ -76,12 +76,14 @@ const AboutPage = () => {
 
           {/* Resume Button */}
           <div className="flex justify-center">
-            <button 
+            <a 
               type="button" 
               className="inline-flex items-center px-6 py-3 text-base font-medium bg-blue-700 rounded-lg hover:bg-blue-600 hover:scale-105 hover:cursor-pointer transition transform shadow-md"
+              href="/documents/ShahzaibFareedResume.pdf"
+              target="_blank"
             >
               Resume <BsArrowUpRight className="ml-2" />
-            </button>
+            </a>
           </div>
 
         </div>

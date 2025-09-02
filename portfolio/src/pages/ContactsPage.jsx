@@ -1,10 +1,26 @@
 import React from 'react'
 import { IoMdMail } from "react-icons/io"
 import { FaPhoneAlt, FaLinkedin } from "react-icons/fa"
+import { useEffect } from 'react';
 
 const ContactsPage = () => {
   //<div className="min-h-screen bg-blue-950 text-white flex flex-col items-center justify-center p-6">
-  document.body.style.overflow = 'hidden';
+    // Add scrolling only for mobile because UI gets stuck on screen
+    useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth <= 768) {
+          document.body.style.overflow = 'auto';
+        } else {
+          document.body.style.overflow = 'hidden';
+        }
+      };
+      handleResize();
+      window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+        document.body.style.overflow = 'auto'; // reset
+      };
+    }, [])
   return (
     <>
       <div className="h-screen bg-blue-950 text-white flex flex-col items-center justify-center p-6 ">
