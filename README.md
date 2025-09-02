@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website!  
 This site highlights my projects, skills, and experiences as a Computer Science student and aspiring Software Engineer.
 
-🌍 **Live Website:** [shahzaibfareed.com](https://yourdomain.com)
+🌍 **Live Website:** [shahzaibfareed.com](https://www.shahzaibfareed.com)
 
 ---
 
