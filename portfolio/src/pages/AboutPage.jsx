@@ -62,6 +62,21 @@ const AboutPage = () => {
             </p>
           </div>
 
+          {/* Coursework */}
+          <div>
+            <h2 className="text-2xl font-bold mb-4 border-b border-blue-700 pb-2">Certifications</h2>
+            <p className="leading-relaxed">
+              Responsive Web Design (FreeCodeCamp): {" "}
+              <a 
+                target="_blank" 
+                href="https://www.freecodecamp.org/certification/fccbab24bcd-1466-47ed-a083-3b577379e71f/responsive-web-design"
+                className="text-blue-400 hover:text-blue-300 underline decoration-blue-300"
+              >
+                 Certification Link
+              </a>
+            </p>
+          </div>
+
           {/* Skills Beyond Code */}
           <div>
             <h2 className="text-2xl font-bold mb-4 border-b border-blue-700 pb-2">Skills Beyond Code</h2>
