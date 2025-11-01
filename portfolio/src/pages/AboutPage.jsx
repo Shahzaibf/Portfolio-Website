@@ -4,6 +4,7 @@ import { FaReact, FaJs, FaPython, FaAws, FaDocker, FaGithub } from "react-icons/
 import { SiCplusplus } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import '../styles/animate.css'
+import { Link } from 'react-router';
 
 const AboutPage = () => {
   document.body.style.overflow = 'auto';
@@ -20,7 +21,7 @@ const AboutPage = () => {
           <p className="text-lg leading-relaxed">
             Hey! 
             I'm currently pursuing a Bachelor's degree in Computer Science at Hunter College. 
-            Through my projects, I've gained hands-on experience with a range of technologies 
+            Through <Link to={"/projects"} className="text-blue-400 hover:text-blue-300 underline decoration-blue-300">my projects</Link>, I've gained hands-on experience with a range of technologies 
             and I'm excited to bring these skills to life in my work. I have experience in 
             front-end and back-end development, as well as in database management and cloud infrastructure. 
             I love experimenting with AI and try to integrate it into my projects.
