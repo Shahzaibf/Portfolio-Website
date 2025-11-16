@@ -1,8 +1,5 @@
 import React from 'react'
 import { BsArrowUpRight } from "react-icons/bs";
-import { FaReact, FaJs, FaPython, FaAws, FaDocker, FaGithub } from "react-icons/fa";
-import { SiCplusplus } from "react-icons/si";
-import { BiLogoPostgresql } from "react-icons/bi";
 import '../styles/animate.css'
 import { Link } from 'react-router';
 
@@ -28,18 +25,27 @@ const AboutPage = () => {
           </p>
 
           {/* Tech Stack */}
-          <div>
-            <h2 className="text-2xl font-bold mb-4 border-b border-blue-700 pb-2">My Tech Stack:</h2>
-            <div className="grid grid-cols-4 gap-6 text-5xl justify-items-center">
-              <FaPython className="hover:text-blue-400 transition-transform hover:scale-110" />
-              <FaJs className="hover:text-blue-400 transition-transform hover:scale-110" />
-              <SiCplusplus className="hover:text-blue-400 transition-transform hover:scale-110" />
-              <FaReact className="hover:text-blue-400 transition-transform hover:scale-110" />
-              <BiLogoPostgresql className="hover:text-blue-400 transition-transform hover:scale-110" />
-              <FaAws className="hover:text-blue-400 transition-transform hover:scale-110" />
-              <FaDocker className="hover:text-blue-400 transition-transform hover:scale-110" />
-              <FaGithub className="hover:text-blue-400 transition-transform hover:scale-110" />
-            </div>
+          <h2 className="text-2xl font-bold mb-4 border-b border-blue-700 pb-2">My Tech Stack:</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-lg font-medium">
+            {[
+              "Python",
+              "TypeScript",
+              "C++",
+              "React.js",
+              "Node.js",
+              "PostgreSQL",
+              "MongoDB",
+              "AWS",
+              "Docker",
+              "GitHub",
+            ].map((tech, index) => (
+              <div
+                key={index}
+                className="bg-blue-800 hover:bg-blue-700 rounded-xl px-4 py-3 text-center transition shadow hover:shadow-lg hover:scale-105 cursor-default"
+              >
+                {tech}
+              </div>
+            ))}
           </div>
 
           {/* Highlights */}
