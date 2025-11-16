@@ -29,7 +29,7 @@ const AboutPage = () => {
 
           {/* Tech Stack */}
           <div>
-            <h2 className="text-2xl font-bold mb-4 border-b border-blue-700 pb-2">My Tech Stack</h2>
+            <h2 className="text-2xl font-bold mb-4 border-b border-blue-700 pb-2">My Tech Stack:</h2>
             <div className="grid grid-cols-4 gap-6 text-5xl justify-items-center">
               <FaPython className="hover:text-blue-400 transition-transform hover:scale-110" />
               <FaJs className="hover:text-blue-400 transition-transform hover:scale-110" />
@@ -50,6 +50,7 @@ const AboutPage = () => {
               <li>Developed a MERN stack product tracker with full CRUD operations and API integration.</li>
               <li>Developed a SwiftUI-based air quality app leveraging the OpenWeatherMap API, providing real-time AQI insights."</li>
               <li>Deploying a GraphQL API with Go using AWS Lambda, and leveraging AWS CDK, EC2, Heroku, and Docker for infrastructure management in a cross-platform capstone project.</li>
+              <li>Developed a full stack web application for students to join/create accounts with JWT authentication, add Hunter CSCI classes, join chats, and create announcements.</li>
             </ul>
           </div>
 

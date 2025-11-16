@@ -16,6 +16,21 @@ export const initialProjects = [
     gitLink: true,
   },
   {
+    title: "Course Chat",
+    description:
+      "Full stack project allowing users to register and login with JWT authentication, add/delete CSCI Hunter classes from web scraped data, join group chats for every course, as well as add/delete/edit announcements for every course. Additionally used github actions and jest for CI/CD workflows.",
+    techstack: [
+      "React.js",
+      "Typescript",
+      "Express.js",
+      "Node.js",
+      "MongoDB",
+      "Socket.io",
+    ],
+    githublink: "https://github.com/CSCI-40500-Fall-2025/Course-Chat",
+    gitLink: true,
+  },
+  {
     title: "Nexus",
     description:
       "App for helping gamers find teams by matching them based on game preferences, playstyle, playtime, and region. It features chat for coordination and a reputation system to reward positive interactions and report issues. Mainly handled cloud computing, architecture, cloud functions, and database management.",

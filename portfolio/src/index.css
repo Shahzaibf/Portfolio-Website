@@ -3,3 +3,12 @@
   color-scheme: light dark;
   background-color: #0B0B45;
 }
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom,#3b82f6, #9333ea);
+  border-radius: 25px;
+}

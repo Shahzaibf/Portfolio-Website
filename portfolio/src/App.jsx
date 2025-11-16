@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Navbar from './components/Navbar'
 import { Routes, Route } from "react-router";
 import AboutPage from './pages/AboutPage';

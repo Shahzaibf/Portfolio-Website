@@ -54,6 +54,11 @@ const HomePage = () => {
           <Link to="/contacts" className="border border-white text-white px-6 py-3 rounded hover:bg-white hover:text-blue-900 transition-colors duration-300">
             Contact Me
           </Link>
+          <a href='https://github.com/Shahzaibf' target='_blank'>
+            <button className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition-colors duration-300 hover:cursor-pointer">
+              Github Portfolio
+            </button>
+          </a>
         </div>
       </div>
         <div className='w-1/2 flex justify-center hidden md:flex'>
