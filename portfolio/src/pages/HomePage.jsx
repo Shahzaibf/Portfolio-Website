@@ -48,7 +48,7 @@ const HomePage = () => {
         Current Computer Science student at Hunter College and full-stack developer focused on building clean, efficient, and reliable applications.
         </p>
         <div className="flex gap-4">
-          <Link to="/projects" className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition-colors duration-300">
+          <Link to="/projects" className="hidden sm:block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition-colors duration-300">
             View Projects
           </Link>
           <Link to="/contacts" className="border border-white text-white px-6 py-3 rounded hover:bg-white hover:text-blue-900 transition-colors duration-300">

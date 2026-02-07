@@ -26,7 +26,7 @@ const AboutPage = () => {
 
           {/* Tech Stack */}
           <h2 className="text-2xl font-bold mb-4 border-b border-blue-700 pb-2">My Tech Stack:</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-lg font-medium">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-lg font-medium">
             {[
               "Python",
               "TypeScript",
@@ -41,7 +41,7 @@ const AboutPage = () => {
             ].map((tech, index) => (
               <div
                 key={index}
-                className="bg-blue-800 hover:bg-blue-700 rounded-xl px-4 py-3 text-center transition shadow hover:shadow-lg hover:scale-105 cursor-default"
+                className="bg-blue-800 hover:bg-blue-700 rounded-xl px-4 py-3 text-center transition shadow hover:shadow-lg hover:scale-105 cursor-default hover:border-1"
               >
                 {tech}
               </div>

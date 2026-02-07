@@ -13,10 +13,14 @@ const links = [
 ];
 
 const NavLinks = ({ isMobile = false }) => {
+  const scrollToTop = () => {
+    window.scrollTo( { top: 0, behavior: 'smooth'});
+  }
   return (
     <>
       {links.map(({ to, label }) => (
         <NavLink
+          onClick={scrollToTop}
           key={to}
           to={to}
           className={({ isActive }) =>
