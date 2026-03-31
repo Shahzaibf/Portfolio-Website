@@ -9,10 +9,21 @@ const WorkPage = () => {
           Work Experience
         </h1>
 
-        <div className="bg-blue-900 rounded-2xl shadow-lg p-8 space-y-10 hover:shadow-2xl transition animated-open">
+        <div className="transition animated-open grid grid-cols-1 gap-y-5 ">
           
+          {/* Career Launch Tech Initiative */}
+          <div className='bg-blue-900 rounded-2xl shadow-lg p-8 space-y-10 hover:shadow-2xl '>
+            <h2 className="text-2xl font-bold mb-2">Software Engineering Intern @ Career Launch Tech Initiative</h2>
+            <p className="text-sm text-gray-300 mb-4">Feb 2024 – May 2026 | Remote</p>
+            <ul className="list-disc pl-5 space-y-2 text-base leading-relaxed">
+              <li>Developing and shipping full-stack features using React.js and Node.js in a startup environment, collaborating with engineers to enhance existing products and integrate AI-driven functionality.</li>
+              <li>Implementing RESTful API endpoints, debugging backend services, and building responsive frontend components.</li>
+              <li>Participating in code reviews, testing, and performance optimization while supporting integration of AI/ML-driven features. </li>
+            </ul>
+          </div>
+
           {/* Beam Center */}
-          <div>
+          <div className='bg-blue-900 rounded-2xl shadow-lg p-8 space-y-10 hover:shadow-2xl '>
             <h2 className="text-2xl font-bold mb-2">Assistant Instructor @ Beam Center</h2>
             <p className="text-sm text-gray-300 mb-4">Jun 2024 – Aug 2024 | New York, NY</p>
             <ul className="list-disc pl-5 space-y-2 text-base leading-relaxed">
