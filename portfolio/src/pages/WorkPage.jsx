@@ -19,6 +19,7 @@ const WorkPage = () => {
               <li>Developing and shipping full-stack features using React.js and Node.js in a startup environment, collaborating with engineers to enhance existing products and integrate AI-driven functionality.</li>
               <li>Implementing RESTful API endpoints, debugging backend services, and building responsive frontend components.</li>
               <li>Participating in code reviews, testing, and performance optimization while supporting integration of AI/ML-driven features. </li>
+              <li>Leveraged AI tools (e.g., Claude Code) to accelerate development, debug backend services, and improve implementation efficiency across full-stack features</li>
             </ul>
           </div>
 
