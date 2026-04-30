@@ -8,14 +8,6 @@ export const initialProjects = [
     gitLink: true,
   },
   {
-    title: "MERN Product Page Application",
-    description:
-      "A full-stack web application that lets users create, view, update, and delete products. Built with the MERN stack, it features a responsive UI with Chakra UI, modal-based editing, and dynamic routing. Ideal for managing a simple product catalog.",
-    techstack: ["MongoDB", "Express.js", "React.js", "Node.js"],
-    githublink: "https://github.com/Shahzaibf/Product-Page",
-    gitLink: true,
-  },
-  {
     title: "Course Chat",
     description:
       "Full stack project allowing users to register and login with JWT authentication, add/delete CSCI Hunter classes from web scraped data, join group chats for every course, as well as add/delete/edit announcements for every course. Additionally used github actions and jest for CI/CD workflows.",
@@ -36,6 +28,14 @@ export const initialProjects = [
       "App for helping gamers find teams by matching them based on game preferences, playstyle, playtime, and region. It features chat for coordination and a reputation system to reward positive interactions and report issues. Mainly handled cloud computing, architecture, cloud functions, and database management.",
     techstack: ["Lambda", "EC2", "PostgreSQL", "Docker", "Go"],
     githublink: "https://github.com/Evantopian/Nexus/tree/cloud",
+    gitLink: true,
+  },
+  {
+    title: "MERN Product Page Application",
+    description:
+      "A full-stack web application that lets users create, view, update, and delete products. Built with the MERN stack, it features a responsive UI with Chakra UI, modal-based editing, and dynamic routing. Ideal for managing a simple product catalog.",
+    techstack: ["MongoDB", "Express.js", "React.js", "Node.js"],
+    githublink: "https://github.com/Shahzaibf/Product-Page",
     gitLink: true,
   },
   {

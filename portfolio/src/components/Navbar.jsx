@@ -9,7 +9,7 @@ const links = [
   { to: "/about", label: "About" },
   { to: "/projects", label: "Projects" },
   { to: "/work", label: "Work"},
-  { to: "/contacts", label: "Contacts" },
+  { to: "/contacts", label: "Contact Me" },
 ];
 
 const NavLinks = ({ isMobile = false }) => {
