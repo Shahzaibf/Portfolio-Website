@@ -66,7 +66,7 @@ const AboutPage = () => {
                   Open to opportunities
                 </span>
               </div>
-              <p className="text-blue-300 text-sm mb-3">CS Student at Hunter College · Full Stack Developer · New York, NY</p>
+              <p className="text-blue-300 text-sm mb-3">Computer Science graduate from Hunter College · Full Stack Developer · New York, NY</p>
               <p className="text-base leading-relaxed text-gray-200">
                 I build full-stack applications and love integrating AI into my work. Through{" "}
                 <Link to="/projects" className="text-blue-400 hover:text-blue-300 underline decoration-blue-300">

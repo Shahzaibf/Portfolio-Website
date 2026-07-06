@@ -27,13 +27,13 @@ const HomePage = () => {
   document.body.style.overflow = 'hidden';
   return (
     <>
-    <div className='flex h-screen items-center justify-between bg-blue-950 px-10 text-white md:flex-row flex-col md:justify-between justify-center text-center md:text-left'>
-      <div className="flex flex-col items-center justify-center md:items-start justify-center w-full md:w-1/2">
+    <div className='flex h-screen items-center justify-between bg-blue-950 px-10 text-white md:flex-row flex-col md:justify-between text-center md:text-left'>
+      <div className="flex flex-col items-center justify-center md:items-start w-full md:w-1/2">
         <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent leading-tight fade-in-title">
           Software Engineer
         </h1>
         {lookingForWork &&
-        <Link to="/contacts" classname="">
+        <Link to="/contacts">
           <div className="inline-flex items-center gap-2 px-3 py-1 mb-2 rounded-full bg-blue-100 text-blue-800 font-semibold text-sm shadow-sm animate-bounce hover:bg-blue-300 transition-colors duration-300">
             <span className="w-2 h-2 rounded-full bg-blue-600 animate-ping" />
             Currently looking for work!
@@ -45,7 +45,7 @@ const HomePage = () => {
           <p className='text-base text-white font-medium tracking-wide'>New York City, NY</p>
         </div>
         <p className="text-lg text-gray-300 max-w-xl mb-6">
-        Current Computer Science student at Hunter College and full-stack developer focused on building clean, efficient, and reliable applications.
+        Computer Science graduate from Hunter College and full-stack developer focused on building clean, efficient, and reliable applications.
         </p>
         <div className="flex gap-4">
           <Link to="/projects" className="hidden sm:block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition-colors duration-300">
